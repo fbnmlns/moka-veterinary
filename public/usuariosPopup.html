@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Usuarios-Agregar-popup.css">
+    <title>Popup</title>
+    <script src="https://kit.fontawesome.com/4d56a3356e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="Usuarios-popup-container">
+        <div class="form-container"> <button type="button" id="equis-icon" class="button-equis"><i
+                    class="fa-solid fa-x equis-icon"></i></button>
+            <form class="border-bottom form" action="#" method="get">
+                <!--action, documento donde va la informacion-->
+
+                <h1 class="form-title">Ingresar datos del empleado</h1>
+                <div class="wrapper">
+                    <div class="div-izq">
+                        <input type="text" name="primerNombre" id="primerNombre" placeholder="Ingrese el primer nombre"
+                            required>
+                        <input type="text" name="segundoNombre" id="segundoNombre"
+                            placeholder="Ingrese el segundo nombre">
+                        <input type="text" name="primerApellido" id="primerApellido"
+                            placeholder="Ingrese el primer apellido" required>
+                        <input type="text" name="segundoApellido" id="segundoApellido"
+                            placeholder="Ingrese el segundo apellido" required>
+                        <input type="text" name="telefono" id="telefonoEmpleado"
+                            placeholder="Ingrese su numero de telefono" required>
+                        <input type="text" name="direccion" id="direccionEmpleado" placeholder="Ingrese su direccion"
+                            required>
+                    </div>
+                    <div class="div-der">
+
+                        <select id="rol" name="roles" required>
+                            <option value="" selected disabled hidden>Escoja el rol</option>
+                            <option value="Veterinario/a">Veterinario/a</option>
+                            <option value="Secretario/a">Secretario/a</option>
+                        </select>
+                        <input type="text" name="pin" id="pinEmpleado" placeholder="Ingrese el pin" required>
+                        <input type="email" name="email" id="emailEmpleado" placeholder="Ingrese su e-mail" required>
+                        <input class="ID" type="text" name="ID" id="idEmpleado" placeholder="Ingrese el ID" required>
+                        <select id="estadoEmpleado" name="estado" required>
+                            <option value="Activo" selected disabled>Activo</option>
+                        </select>
+                        <div class="input-imagen">
+                            <label for="Foto de perfil">Foto de perfil</label>
+                            <input type="file" name="fotoPerfil" id="myFile" placeholder="Foto de perfil"
+                                accept="image/png, image/jpg" required>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-1" type="submit" id="register-button">Registrar Empleado</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("equis-icon").onclick = function () {
+            location.href = "Usuarios1.html";
+        };
+
+    </script>
+    <script src="Usuarios-Agregar-popup.js"></script>
+</body>
+
+</html>

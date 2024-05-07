@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="citasAgendar.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f504b51584.js" crossorigin="anonymous"></script>
+        <title>Moka</title>
+    </head>
+    <body onload="cargarDoctores()">
+        <header class="header">
+            <button class="menu-icon-btn" data-menu-icon-btn>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon">
+                    <g>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </g>
+                </svg>
+            </button>
+            <h1 class="titulo-pagina">Agendar cita</h1>
+        </header>
+        <div class="container-aside">
+            <aside class="sidebar" data-sidebar>
+                <div class="top-nav">
+                    <a href="menu.html" target="_blank" class="moka-logo border"><img src="img/MOKA_ICON_2.png"
+                            alt="Logo de Veterinaria Moka"></a>
+                    <div class="hidden-sidebar nombre-vet">Veterinaria Moka </div>
+                </div>
+                <div class="middle-sidebar">
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item active">
+                            <a href="perfil.html" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon " width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                                </svg>
+                                <div class="hidden-sidebar">MI PERFIL</div>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="citasVista.html" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <rect x="4" y="5" width="16" height="16" rx="2"></rect>
+                                    <line x1="16" y1="3" x2="16" y2="7"></line>
+                                    <line x1="8" y1="3" x2="8" y2="7"></line>
+                                    <line x1="4" y1="11" x2="20" y2="11"></line>
+                                    <rect x="8" y="15" width="2" height="2"></rect>
+                                </svg>
+                                <div class="hidden-sidebar">CITAS</div>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="reservaciones.html" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>
+                                    <path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>
+                                    <path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path>
+                                    <line x1="11" y1="6" x2="20" y2="6"></line>
+                                    <line x1="11" y1="12" x2="20" y2="12"></line>
+                                    <line x1="11" y1="18" x2="20" y2="18"></line>
+                                </svg>
+                                <div class="hidden-sidebar">RESERVACIONES</div>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="Expediente00.html" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M9 4h3l2 2h5a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2">
+                                    </path>
+                                    <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2"></path>
+                                </svg>
+                                <div class="hidden-sidebar">EXPEDIENTES</div>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="listaClientes.html" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                                </svg>
+                                <div class="hidden-sidebar">CLIENTES</div>
+                            </a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a id="sideBar-Usuarios1" class="sidebar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+                                    <circle cx="12" cy="16" r="1"></circle>
+                                    <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path>
+                                </svg>
+                                <div class="hidden-sidebar">ADMIN</div>
+                            </a>
+                        </li>
+    
+                        <div class="bottom-sidebar log-out-pading">
+                            <ul class="sidebar-list">
+                                <li class="sidebar-list-item">
+                                    <a href="LoginWorker.html" class="sidebar-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2">
+                                            </path>
+                                            <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                                        </svg>
+                                        <div class="hidden-sidebar "> CERRAR SESION</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+            </aside>
+    
+    
+            <main class="content">
+                <div class="citasA-container">
+                    <div class="citasA-titulo">
+                        <h1 class="citasA-h1">Agendar cita</h1>
+
+                        <button class="citasA-li"><a href="citasVista.html" class="citasA-a">Ver citas<i class="fa-solid fa-arrow-right"></i></a></button>
+                    </div>
+        
+                    <div class="citasA-form">
+                        <form onsubmit="insertarCita()" method="get" action="citasVista.html">
+                            <div class="citasA-form-container-1">
+                                <div class="citasA-grid-1">
+                                    <label for="vetNombreMascota" class="citasA-label">Ingrese el nombre de la mascota:</label><br>
+                                    <input type="text" name="vetNombreMascota" id="nombreMascota" placeholder="Nombre de mascota" class="citasA-nombreMascota" minlength="1" required>
+                                </div>
+                                
+                                <div class="citasA-grid-2">
+                                    <label for="vetDoctorEncargado" class="citasA-label">Escoja al doctor encargado:</label><br>
+                                    <select name="vetDoctorEncargado" id="idDoctor" class="citasA-doctorEncargado" required>
+                                    
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="citasA-form-container-1">
+                                <div class="citasA-grid-3">
+                                    <label for="vetFechaCita" class="citasA-label">Ingrese la fecha de la cita:</label><br>
+                                    <input type="date" name="vetFechaCita" id="fecha" class="citasA-fecha" placeholder="dd/mm/aa" required><br>
+                                </div>
+    
+                                <div class="citasA-grid-4">
+                                    <label for="vetHoraCita" class="citasA-label">Ingrese la hora de la cita:</label><br>
+                                    <input type="time" name="vetHoraCita" id="hora" class="citasA-hora" required>
+                                </div>
+                            </div>
+
+                            <div class="citasA-form-cedula">
+                                <label class="citasA-label">Ingrese la cédula del dueño:</label><br>
+                                <input type="number" class="campo-cedula" name="idCliente" id="idCliente" required>
+                            </div>
+
+                            <input type="submit" class="citasA-submit" value="Agendar Cita">
+                        </form>
+                    </div>
+                </div>
+            </main>
+        <script src="funcionesCitas.js"></script>
+        <script type="text/javascript" src="template.js"></script>
+        <script src="citasAgendar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e879015faa.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <button class="menu-icon-btn" data-menu-icon-btn>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon">
+                <g>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </g>
+            </svg>
+        </button>
+        <h1 class="titulo-pagina"> Bienvenido</h1>
+
+    </header>
+    <div class="container-aside">
+        <aside class="sidebar" data-sidebar>
+            <div class="top-nav">
+                <a href="menu.html" class="moka-logo border"><img src="img/MOKA_ICON_2.png"
+                        alt="Logo de Veterinaria Moka"></a>
+                <div class="hidden-sidebar nombre-vet">Veterinaria Moka </div>
+            </div> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div class="middle-sidebar">
+                <ul class="sidebar-list">
+                    <div class="bottom-sidebar log-out-pading">
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list-item">
+                                <a href="LoginWorker.html" class="sidebar-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-icon" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2">
+                                        </path>
+                                        <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                                    </svg>
+                                    <div class="hidden-sidebar "> CERRAR SESION</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        </aside>
+
+        <main class="menu-0">
+            <div class="menu">
+
+                <div class="menu-opciones">
+
+
+                    <a href="perfil.html"><button class="menu-1"> <span class="glyphicon glyphicon-user"></span> Mi
+                            perfil</button><br /><br />
+                        <a href="citasVista.html"> <button class="menu-1"> <span
+                                    class="glyphicon glyphicon-calendar"></span>Citas</button><br /><br />
+                            <a href="reservaciones.html"> <button class="menu-1"><span
+                                        class="fas fa-calendar-check"></span>Reservaciones</button><br /><br />
+                                <a href="Expediente00.html"><button class="menu-1"><span
+                                            class="glyphicon glyphicon-folder-close"></span>Expedientes</button><br /><br />
+                                    <a href="listaClientes.html"> <button class="menu-1"> <span
+                                                class="fa fa-address-book"></span>Clientes</button><br /><br />
+                                        <a id="Usuarios1"> <button class="menu-1"><span
+                                                    class="fa fa-user-plus"></span>Admin</button><br /><br />
+
+
+                                            <!--El id es para utilizar una funcion de JavaScript-->
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript">
+            document.getElementById("btn-admin").onclick = function () {
+                location.href = "Usuarios1.html";
+            };
+        </script>
+        <script src="menu.js"></script>
+</body>
+
+<script type="text/javascript" src="template.js">
+</script>
+
+
+</html>

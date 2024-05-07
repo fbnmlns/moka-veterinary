@@ -1,0 +1,23 @@
+#imgDisplay {
+    width: 375px;
+    max-height: 211px;
+    border: 1px solid var(--lightest-gray);
+    background-position: center;
+    background-size: cover;
+    margin-top: 1rem;
+    padding-bottom: 211px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#myfile {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--Naranja-colorEE7D27);
+    width: 100%;
+    padding-left: 45%;
+    padding-bottom: 1rem;
+}

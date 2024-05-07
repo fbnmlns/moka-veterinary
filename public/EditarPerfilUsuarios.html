@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil Usuario</title>
+    <link rel="stylesheet" type="text/css" href="EditarPerfilUsuarios.css">
+
+</head>
+
+<body onload="cargarInfo()">
+
+    <div class="contenedor-input">
+        <form>
+            <input type="text" id="primerNombre" placeholder="Primer Nombre" autocomplete="off">
+            <input type="text" id="segundoNombre" placeholder="Segundo Nombre" autocomplete="off">
+            <input type="text" id="primerApellido" placeholder="Primer apellido" autocomplete="off">
+            <input type="text" id="segundoApellido" placeholder="Segundo apellido" autocomplete="off">
+
+            <select name="rol" id="rol">
+                <option value="placeholder" selected disabled hidden>Elija el rol</option>
+                <option value="Doctor/a">Veterinario/a</option>
+                <option value="Secretario/a">Secretario/a</option>
+            </select>
+            <input type="text" name="pin" id="pinEmpleado" placeholder="Ingrese el pin" autocomplete="off">
+            <input type="email" name="email" id="emailEmpleado" placeholder="Ingrese su e-mail" autocomplete="off">
+            <input class="ID" type="text" name="ID" id="idEmpleado" placeholder="Ingrese el ID" autocomplete="off">
+            <select id="estadoEmpleado" name="estado" required>
+                <option value="placeholder" selected disabled hidden>Seleccione el estado del empleado</option>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+
+            <button type="button" class="secondary-button nextBtn" id="actualizar">Actualizar</button>
+        </form>
+    </div>
+    <script src="EditarPerfilUsuarios.js"></script>
+</body>
+
+</html>

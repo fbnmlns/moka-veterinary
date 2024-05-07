@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: #EE7D27;
+}
+
+
+.Login-header {
+    word-spacing: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #E5FFFD;
+}
+
+.logo{
+    width: 60%;
+    border-radius: 30px;
+}
+
+.Login-header a {
+    text-align: center;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+}
+
+.Login {
+    margin: 3rem auto;
+    width: 55%;
+}
+
+.Login-wrapper-1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Login-wrapper-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Login-big-container {
+    border: 3px solid black;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 4rem;
+}
+
+.Login-worker {
+    border-top-left-radius: 2rem;
+    width: 50%;
+    text-align: center;
+    background-color: #EE7D27;
+}
+
+
+.Login-Button-Worker {
+    background-color: #EE7D27;
+    border: none;
+    padding: 15px;
+    border-top-left-radius: 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.Login-Button-Worker:hover {
+    background-color: #EE7D27;
+}
+
+.Login-Button-Worker:active {
+    background-color: transparent;
+    border: 2px solid #8b98a0;
+    color: #8b98a0;
+}
+
+.Login-Button-Admin {
+    background-color: #EE7D27;
+    border: none;
+    padding: 15px;
+    border-top-right-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.Login-Button-Admin:hover {
+    background-color: #EE7D27;
+}
+
+.Login-Button-Admin:active {
+    background-color: transparent;
+    border: 2px solid #8b98a0;
+    color: #8b98a0;
+}
+
+.Login-Admin {
+    border-top-right-radius: 2rem;
+    width: 50%;
+    background-color: #EE7D27;
+    text-align: center;
+}
+
+.Login-bg-div {
+    border: 2px solid black;
+    padding: 2rem 1rem 1rem 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.Login-info-div {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+
+}
+
+.input-PIN {
+    outline: none;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 80%;
+    /* border-radius: 4rem; */
+    color: white;
+    /* background-color: #5d737e; */
+    justify-self: center;
+    /* padding: 1rem; */
+    /* font-size: 26px; */
+    text-align: center;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: none;
+    color: black;
+
+}
+
+
+.input-PIN::placeholder {
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.Login-icon-candado {
+    max-width: 2rem;
+    max-height: 4rem;
+    /* background-color: #5d737e; */
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+}
+
+.Login-container-button {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Login-button {
+    background-color: #5D737E;
+    color: white;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.Login-btn {
+    border: solid 1pt black;
+    text-align: center;
+    background-color: white;
+    transition: ease-out 0.1s;
+    font-size: 1.5em;
+    outline: none;
+    /* width: 250px;
+    max-width: 250px; */
+    /* position: relative; */
+    border-radius: 6px;
+    padding: 17px;
+
+}
+
+.Login-btn:hover {
+    background-color: #EE7D27;
+    cursor: pointer;
+    color: white;
+    border: white;
+}
+
+.Login-btn:active {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--Naranja-colorEE7D27);
+    color: var(--Naranja-colorEE7D27)
+}
+
+@media(min-width:500px) {
+    .Login-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        /* word-spacing: 15rem; */
+        text-align: center;
+        font-size: 24px;
+        padding: 2rem 0;
+        justify-content: center;
+    }
+
+    .Login-header a {
+        padding: 0 6rem;
+    }
+
+    .Login-Button-Worker {
+        padding: 15px;
+        border-top-left-radius: 2rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        width: 100%;
+        border: solid 1pt black;
+        text-align: center;
+        background-color: white;
+        transition: ease-out 0.1s;
+        outline: none;
+    }
+
+    .Login-Button-Worker:hover {
+        cursor: pointer;
+        color: white;
+        border: white;
+    }
+
+    .Login-Button-Worker:active {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid var(--Naranja-colorEE7D27);
+        color: var(--Naranja-colorEE7D27)
+    }
+
+    .Login-Button-Admin {
+        padding: 15px;
+        border-top-right-radius: 2rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        width: 100%;
+        border: solid 1pt black;
+        text-align: center;
+        background-color: white;
+        transition: ease-out 0.1s;
+        outline: none;
+    }
+
+    .Login-Button-Admin:hover {
+        cursor: pointer;
+        color: white;
+        border: white;
+    }
+
+
+    .Login-Button-Admin:active {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid var(--Naranja-colorEE7D27);
+        color: var(--Naranja-colorEE7D27)
+    }
+
+    .Login-PIN-div {
+        display: flex;
+        justify-content: center;
+        width: -webkit-fill-available;
+        margin-bottom: 2rem;
+    }
+
+    .Login-button {
+        padding: 2rem;
+        border: 2px solid black;
+        border-radius: 100%;
+        justify-content: center;
+        font-size: 1.3rem;
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+    .input-PIN::placeholder {
+        /* color: white; */
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .input-PIN {
+        outline: none;
+        border: none;
+        background-image: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 80%;
+        /* color: white; */
+        /* background-color: #5d737e; */
+        justify-self: center;
+        padding: 1rem;
+        font-size: 26px;
+        text-align: center;
+        border: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: none;
+        letter-spacing: 5px;
+    }
+
+    .Login-icon-candado {
+        padding: 3px;
+        max-width: 20%;
+        max-height: 4.3rem;
+        /* background-color: #5d737e; */
+        border-right: 2px solid black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: none;
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="LoginWorker.css">
+    <script src="LoginWorker.js"></script>
+    <title>Moka</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="contacto-logo">
+                <a href="index.html"><img src="img/MOKA_LOGO_2.png" alt="logo moka" class="logo"></a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="HOTEL.html">Hotel</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="LoginWorker.html">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="Login">
+        <div class="Login-wrapper-1">
+            <div class="Login-worker"><a href="LoginWorker.html"><button class="Login-Button-Worker"
+                        id="Login-button-worker" type="button">Empleado</button></a>
+            </div>
+            <div class="Login-Admin"><a href="LoginAdmin.html"><button class="Login-Button-Admin"
+                        id="Login-button-admin">Admin</button></a></div>
+        </div>
+        <div class="Login-bg-div Login-wrapper-2">
+            <div class="Login-PIN-div">
+                <input class="input-PIN" type="password" placeholder="PIN" id="pinEmpleado">
+                <img class="Login-icon-candado" src="img/candado.png">
+            </div>
+            <div class="Login-container-button">
+                <a href="#" onclick="validarEntrada()"><button class="Login-btn">Acceder</button></a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
